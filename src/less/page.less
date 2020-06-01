@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+    padding-top: 61px !important;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px !important;
+    color: #304455;
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #304455;
+}
+
+a.active{
+    font-weight: 600;
+    color: #42b983;
+}
+
+h1, h2, h3, h4{
+    color: #273849;
+    font-weight: 600;
+}
+
+code, pre {
+    font-family:Consolas,Menlo,Courier,monospace;
+    font-size: 0.85em;
+    background-color: #f8f8f8;
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+}
+
+pre code{
+    overflow-x: auto;
+    color: #000000;
+    white-space: pre;
+    padding: 1.2em 1.4em;
+    margin: 0 2px;
+    font-size: 0.85rem;
+    line-height: 1.6rem;
+    border-radius: 2px;
+    display: block;
+}
+
+pre code::before{
+    font-family:Consolas,Menlo,Courier,monospace;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ccc;
+    text-align: right;
+    font-size: 0.9em;
+    padding: 5px 10px 0;
+    line-height: 15px;
+    height: 15px;
+    font-weight: 600;
+}
+
+pre{
+    position: relative;
+}
+
+pre code.language-html::before{
+    content: "HTML";
+}
+
+pre code.language-js::before{
+    content: "JS";
+}
+
+pre code .hljs-tag, pre code .hljs-tag pre code .hljs-title, pre code .hljs-change, pre code .hljs-winutils, pre code .hljs-flow, pre code .hljs-tex pre code .hljs-special {
+    color: #2973b7;
+}
+
+pre code .hljs-keyword, pre code .hljs-attribute {
+    color: #d63200;
+}
+
+pre code .hljs-symbol, pre code .hljs-symbol pre code .hljs-string, pre code .hljs-value, pre code .hljs-regexp, pre code .hljs-string, pre code .hljs-subst, pre code .hljs-haskell pre code .hljs-type, pre code .hljs-preprocessor, pre code .hljs-ruby pre code .hljs-class pre code .hljs-parent, pre code .hljs-built_in, pre code .hljs-sql pre code .hljs-aggregate, pre code .hljs-django pre code .hljs-template_tag, pre code .hljs-django pre code .hljs-variable, pre code .hljs-smalltalk pre code .hljs-class, pre code .hljs-javadoc, pre code .hljs-django pre code .hljs-filter pre code .hljs-argument, pre code .hljs-smalltalk pre code .hljs-localvars, pre code .hljs-smalltalk pre code .hljs-array, pre code .hljs-attr_selector, pre code .hljs-pseudo, pre code .hljs-addition, pre code .hljs-stream, pre code .hljs-envvar, pre code .hljs-apache pre code .hljs-tag, pre code .hljs-apache pre code .hljs-cbracket, pre code .hljs-tex pre code .hljs-command, pre code .hljs-prompt {
+    color: #42b983;
+}
