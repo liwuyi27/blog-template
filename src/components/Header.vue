@@ -1,8 +1,35 @@
 <template>
     <div class="header-component">
-        <span>写信告诉我今天，海是什么颜色</span>
+        <span>{{randomName()}}</span>
     </div>
 </template>
+<script>
+export default {
+    data(){
+        return {
+            heads:[
+                '写信告诉我今天, 海是什么颜色',
+                '你是风儿，我是沙；风儿吹吹，沙儿飘飘',
+                'take a sad song,and make it better',
+                '断剑重铸之日，骑士归来之时'
+            ]
+        }
+    },
+    methods:{
+        randomName(){
+            let index = Math.random() * this.heads.length;
+            index = Math.round(index);
+            if(index < 0){
+                index = 0;
+            }
+            if(index > this.heads.length -1){
+                index = this.heads.length -1;
+            }
+            return this.heads[index]
+        }
+    }
+}
+</script>
 <style lang="less" scoped>
 .header-component{
     position: fixed;
